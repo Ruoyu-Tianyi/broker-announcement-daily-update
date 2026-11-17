@@ -1,0 +1,23 @@
+# ------------------------------------------------------------------
+# Whitelist mode: this folder doubles as a live business workspace
+# (master workbook, daily attachments, PDFs, outputs). Ignore
+# everything by default and only publish the skill itself + repo docs.
+# ------------------------------------------------------------------
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/.github/
+!/broker-announcement-daily-update/
+
+# Never commit spreadsheets, PDFs or run artefacts, even inside the skill
+*.xlsx
+*.xlsm
+*.xls
+*.pdf
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

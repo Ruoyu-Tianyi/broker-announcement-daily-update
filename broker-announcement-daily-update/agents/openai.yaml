@@ -1,0 +1,7 @@
+interface:
+  display_name: "券商公告日更"
+  short_description: "安全合并每日券商公告，并依据原始 PDF 补录董事会决议内容"
+  default_prompt: "使用 $broker-announcement-daily-update 更新券商公告总表，并在需要 PDF 时暂停给出待补清单。"
+
+policy:
+  allow_implicit_invocation: true
